@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Moodify</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎧 Moodify</h1>
+
+<h2 id="userText"></h2>
+
+<button onclick="showResult('Happy')">😊 Happy</button>
+<button onclick="showResult('Sad')">😢 Sad</button>
+<button onclick="showResult('Angry')">😡 Angry</button>
+<button onclick="showResult('Relaxed')">😌 Relaxed</button>
+
+<br><br>
+
+<video id="video" autoplay></video><br>
+<button onclick="startCamera()">Start Camera</button>
+<button onclick="capture()">Capture</button>
+
+<h2 id="result"></h2>
+<div id="emoji"></div>
+<p id="quote"></p>
+
+<div class="player-container">
+<iframe id="player"></iframe>
+</div>
+
+<div id="playlist"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
